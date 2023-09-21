@@ -2,14 +2,11 @@ let randomNumber;
 let guessingState = 0;
 
 function generateNumber() {
-    randomNumber = Math.random() * 100;
-    randomNumber = Math.floor(randomNumber);
-    console.log(randomNumber)
+    randomNumber = Math.floor(Math.random() * 100);
 }
 
 function guessNumber() {
-    let input = document.getElementById("numberInput");
-    let numberValue = input.value;
+    let numberValue = document.getElementById("numberInput").value;
     let output = document.getElementById("numberOutput");
 
     if (guessingState === 0) {
@@ -25,6 +22,4 @@ function guessNumber() {
     } else {
         output.textContent = "Higher";
     }
-
-    console.log(Number(numberValue))
 }

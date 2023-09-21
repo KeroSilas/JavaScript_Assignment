@@ -1,6 +1,5 @@
 function changeColor() {
-    let colors = document.getElementById("colors");
-    let color = colors.value;
+    let color = document.getElementById("colors").value;
 
     switch(color) {
         case "White":

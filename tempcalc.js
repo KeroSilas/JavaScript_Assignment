@@ -1,14 +1,13 @@
-function FtoC(fahrenheit) {
+function fahrenheitToCelsius(fahrenheit) {
     return (fahrenheit - 32) * 5/9;
 }
 
-function CtoF(celsius) {
+function celsiusToFahrenheit(celsius) {
     return (celsius * 9/5) + 32;
 }
 
 function calculateTemperature() {
-    let input = document.getElementById("tempInput");
-    let tempValue = input.value;
+    let tempValue = document.getElementById("tempInput").value;
     let output = document.getElementById("tempOutput");
     let celsius = document.getElementById("celsius");
     let fahrenheit = document.getElementById("fahrenheit");
@@ -16,10 +15,10 @@ function calculateTemperature() {
     let result;
 
     if(celsius.checked) {
-        result = CtoF(Number(tempValue));
+        result = celsiusToFahrenheit(Number(tempValue));
         output.textContent = result;
     } else if (fahrenheit.checked) {
-        result = FtoC(Number(tempValue));
+        result = fahrenheitToCelsius(Number(tempValue));
         output.textContent = result;
     }
 }
