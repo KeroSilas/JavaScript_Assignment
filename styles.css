@@ -1,0 +1,14 @@
+h1, h2, p, label {
+    font-family: Helvetica, sans-serif;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#tempcalc, #numberguesser, #colorchanger {
+    margin-bottom: 10px;
+    align-content: baseline;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 6px;
+    padding: 20px;
+}

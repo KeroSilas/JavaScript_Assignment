@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML + JavaScript Assignment</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="tempcalc.js"></script>
+    <script type="text/javascript" src="numberguesser.js"></script>
+    <script type="text/javascript" src="colorchanger.js"></script>
+</head>
+<body>
+<h1>HTML + JavaScript Assignment</h1>
+<div id="tempcalc">
+    <h2>Temperature Converter</h2>
+    <input type="radio" id="fahrenheit" name="unit" value="Celsius">
+    <label for="fahrenheit">Fahrenheit</label><br>
+    <input type="radio" id="celsius" name="unit" value="Fahrenheit">
+    <label for="celsius">Celsius</label><br>
+    <label for="tempInput">Enter a temperature:</label>
+    <input type="text" id="tempInput">
+    <button onclick=calculateTemperature()>Convert</button>
+    <p id="tempOutput"></p>
+</div>
+<div id="numberguesser">
+    <h2>Guess A Number</h2>
+    <label for="numberInput">Guess a number:</label>
+    <input type="text" id="numberInput">
+    <button onclick=guessNumber()>Guess</button>
+    <p id="numberOutput"></p>
+</div>
+<div id="colorchanger">
+    <h2>Color Changer</h2>
+    <label for="colors">Choose a color:</label>
+    <select name="colors" id="colors" onChange="changeColor();">
+        <option value="White" id="white">White</option>
+        <option value="Red" id="red">Red</option>
+        <option value="Blue" id="blue">Blue</option>
+        <option value="Green" id="green">Green</option>
+    </select>
+</div>
+</body>
+</html>
