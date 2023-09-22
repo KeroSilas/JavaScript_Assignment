@@ -4,11 +4,26 @@ h1, h2, p, label {
     margin-bottom: 10px;
 }
 
-#tempcalc, #numberguesser, #colorchanger {
+.task {
     margin-bottom: 10px;
     align-content: baseline;
     background-color: white;
-    border: 1px solid grey;
+    border: 1px solid #535353;
     border-radius: 6px;
     padding: 20px;
+    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.20);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 18px;
+    font-size: 20px;
+    text-align: center;
 }

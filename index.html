@@ -7,10 +7,11 @@
     <script type="text/javascript" src="tempcalc.js"></script>
     <script type="text/javascript" src="numberguesser.js"></script>
     <script type="text/javascript" src="colorchanger.js"></script>
+    <script type="text/javascript" src="todolist.js"></script>
 </head>
 <body>
 <h1>HTML + JavaScript Assignment</h1>
-<div id="tempcalc">
+<div class="task">
     <h2>Temperature Converter</h2>
     <input type="radio" id="fahrenheit" name="unit" value="Celsius">
     <label for="fahrenheit">Fahrenheit</label><br>
@@ -21,14 +22,14 @@
     <button onclick=calculateTemperature()>Convert</button>
     <p id="tempOutput"></p>
 </div>
-<div id="numberguesser">
+<div class="task">
     <h2>Guess A Number</h2>
     <label for="numberInput">Guess a number:</label>
     <input type="text" id="numberInput">
     <button onclick=guessNumber()>Guess</button>
     <p id="numberOutput"></p>
 </div>
-<div id="colorchanger">
+<div class="task">
     <h2>Color Changer</h2>
     <label for="colors">Choose a color:</label>
     <select name="colors" id="colors" onChange="changeColor();">
@@ -37,6 +38,53 @@
         <option value="Blue" id="blue">Blue</option>
         <option value="Green" id="green">Green</option>
     </select>
+</div>
+<div class="task">
+    <h2>To-Do List</h2>
+    <label for="taskInput">Create a task:</label>
+    <input type="text" id="taskInput">
+    <button onclick=createTask()>Add</button>
+    <ul id="list"></ul>
+</div>
+<div class="task">
+    <h2>Currency Converter</h2> <!-- Not implemented -->
+    <label for="currencyInput">Enter amount:</label>
+    <input type="text" id="currencyInput">
+    <label for="startcurrency">Start currency:</label>
+    <select name="startcurrency" id="startcurrency" onChange="convertCurrency();">
+        <option value="DKK" id="dkk">DKK</option>
+        <option value="EUR" id="eur">EUR</option>
+        <option value="USD" id="usd">USD</option>
+        <option value="JPY" id="jpy">JPY</option>
+    </select>
+    <label for="endcurrency">End currency:</label>
+    <select name="endcurrency" id="endcurrency" onChange="convertCurrency();">
+        <option value="DKK" id="dkk2">DKK</option>
+        <option value="EUR" id="eur2">EUR</option>
+        <option value="USD" id="usd2">USD</option>
+        <option value="JPY" id="jpy2">JPY</option>
+    </select>
+</div>
+<div class="task">
+    <h2>Calculator</h2> <!-- Not implemented -->
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+        <div class="grid-item">0</div>
+        <div class="grid-item">/</div>
+        <div class="grid-item">*</div>
+        <div class="grid-item">-</div>
+        <div class="grid-item">+</div>
+        <div class="grid-item">=</div>
+    </div>
+    <p id="calcOutput"></p>
 </div>
 </body>
 </html>
